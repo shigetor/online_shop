@@ -13,15 +13,15 @@ class ProductController extends AbstractController
      */
     public function show(int $id): Response
     {
-        $product = $this->getDoctrine()
-            ->getRepository(Product::class)
-            ->find($id);
-
-        if (!$product) {
-            throw $this->createNotFoundException(
-                'No product found for id '.$id
-            );
-        }
-        return $this->render('product/index.html.twig');
+//        $product = $this->getDoctrine()
+//            ->getRepository(Product::class)
+//            ->find($id);
+//
+//        if (!$product) {
+//            throw $this->createNotFoundException(
+//                'No product found for id '.$id
+//            );
+//        }
+//        return $this->render('product/index.html.twig');
     }
 }

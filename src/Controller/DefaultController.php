@@ -27,7 +27,7 @@ class DefaultController extends AbstractController
 //            );
 //        }
 
-        return $this->render('product/index.html.twig');
+        return $this->render('default/page.html');
 
     }
 }
